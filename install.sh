@@ -2,6 +2,8 @@
 
 if test -f ~/miniconda3/condabin/conda &> /dev/null
 then
+    echo "BCML will now be installed. This might take a bit."
+    zenity --info --text "BCML will now be installed. This might take a bit." --title "BCML Installer" --width=300 &> /dev/null
     ~/miniconda3/condabin/conda init
     ~/miniconda3/condabin/conda install gcc -y
     ~/miniconda3/condabin/conda install pip -y
