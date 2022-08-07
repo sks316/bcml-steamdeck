@@ -1,0 +1,20 @@
+[Desktop Entry]
+Comment[en_US]=Cross-platform mod loader for The Legend of Zelda: Breath of the Wild
+Comment=Cross-platform mod loader for The Legend of Zelda: Breath of the Wild
+Exec=~/miniconda3/bin/bcml
+GenericName[en_US]=BOTW Cross-platform Mod Loader
+GenericName=BOTW Cross-platform Mod Loader
+Icon=/home/deck/.icons/bcml.png
+Categories=Game;
+MimeType=
+Name[en_US]=BCML
+Name=BCML
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
