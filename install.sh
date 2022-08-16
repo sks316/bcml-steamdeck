@@ -5,7 +5,7 @@ then
     echo "BCML will now be installed. This might take a bit."
     zenity --info --text "BCML will now be installed. This might take a bit." --title "BCML Installer" --width=300 &> /dev/null
     ~/miniconda3/condabin/conda init
-    ~/miniconda3/condabin/conda install gcc -y
+    ~/miniconda3/condabin/conda install -c conda-forge gcc -y
     ~/miniconda3/condabin/conda install pip -y
     ~/miniconda3/bin/python -m pip install bcml
     mkdir ~/.icons
