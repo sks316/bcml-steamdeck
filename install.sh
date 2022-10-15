@@ -16,7 +16,7 @@ then
     echo "BCML is now installed. You can access it with the icon on your desktop, or through your application launcher."
     zenity --info --text "BCML is now installed. You can access it with the icon on your desktop, or through your application launcher." --title "BCML Installer" --width=300 &> /dev/null
 else
-    echo "Miniconda is missing. Please install it, then run this script again."
-    zenity --error --text "Miniconda is missing. Please install it, then run this script again." --title "BCML Installer" --width=300 &> /dev/null
+    echo "Miniconda is missing. Please install Miniconda with Python 3.7, then run this script again."
+    zenity --error --text "Miniconda is missing. Please install Miniconda with Python 3.7, then run this script again." --title "BCML Installer" --width=300 &> /dev/null
 fi
 exit
