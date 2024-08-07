@@ -7,7 +7,7 @@ BCML has been discontinued by its developers in favor of a new mod manager, the 
 # BCML Installer for Steam Deck
 BCML can be difficult to get running on Steam Deck, because it uses an immutable filesystem and the version of Python installed by default is higher than what BCML supports. So I made a script to help people install it.
 
-Requires Miniconda with Python 3.7.
+[Requires Miniconda with Python 3.7.](https://repo.anaconda.com/miniconda/Miniconda3-py37_23.1.0-1-Linux-x86_64.sh)
 
 # The obligatory explanation of why the script exists and what it does
 
