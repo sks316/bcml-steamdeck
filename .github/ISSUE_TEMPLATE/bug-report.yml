@@ -35,7 +35,7 @@ body:
     id: additional-info
     attributes:
       label: Additional Info
-      description: Any additional info that you think might be useful or relevant to this bug
+      description: Provide any additional info that you think might be useful or relevant to this bug.
   - type: checkboxes
     id: checks
     attributes:
