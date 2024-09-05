@@ -46,5 +46,5 @@ body:
           required: true
         - label: I have searched for similar issues [on the issues page](https://github.com/sks316/bcml-steamdeck/issues?q=is%3Aissue)
           required: true
-        - label: "I am using [Miniconda with Python 3.8}(https://repo.anaconda.com/miniconda/Miniconda3-py38_23.1.0-1-Linux-x86_64.sh)]"
+        - label: "I am using [Miniconda with Python 3.8](https://repo.anaconda.com/miniconda/Miniconda3-py38_23.1.0-1-Linux-x86_64.sh)"
           required: true
