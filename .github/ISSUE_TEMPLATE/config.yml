@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: BCML issues page
+    url: https://github.com/NiceneNerd/BCML/issues
+    about: Please check here to ensure that your issue is not BCML-specific.
+  - name: UKMM releases
+    url: https://github.com/NiceneNerd/UKMM/releases/latest
+    about: BCML is deprecated. If your issue is BCML-specific, you are encouraged to try UKMM.

@@ -1,0 +1,50 @@
+name: Installation Error/Bug Report
+description: Report an installation error, a bug, or other unexpected behavior
+title: "[Bug] Title Here "
+labels: ["bug"]
+assignees:
+  - sks316
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Error/Bug Description
+      description: Please describe the error/bug.
+      placeholder: The bug is...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Provide steps for reproducing this error/bug.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Upload Logs
+      description: Upload your bcml_installer.log file, or paste the contents here.
+    validations:
+      required: true
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Info
+      description: Any additional info that you think might be useful or relevant to this bug
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      description: Before submitting your issue, please affirm the following
+      options:
+        - label: This is an issue with the installer. It is not a BCML-specific issue.
+          required: true
+        - label: I have searched for similar issues [on the issues page](https://github.com/sks316/bcml-steamdeck/issues?q=is%3Aissue)
+          required: true
+        - label: "I am using [Miniconda with Python 3.8}(https://repo.anaconda.com/miniconda/Miniconda3-py38_23.1.0-1-Linux-x86_64.sh)]"
+          required: true
