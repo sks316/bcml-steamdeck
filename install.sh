@@ -16,11 +16,14 @@ if zenity --question --title "Install BCML?" --text="This will install BCML to y
     else
         :
     fi
-    if test -f ~/miniconda3/condabin/conda &> /dev/null # Test if Miniconda exists on system
+    if [[ -z "$CONDA_PREFIX" ]]; then
+        CONDA_PREFIX=$HOME/miniconda3
+    fi
+    if test -f $CONDA_PREFIX/condabin/conda &> /dev/null # Test if Miniconda exists on system
     then
         echo "conda init"
         echo "10"
-        ~/miniconda3/condabin/conda init >> ~/bcml_installer.log 2>&1 # Initialize Miniconda, in case the user has not already done so
+        $CONDA_PREFIX/condabin/conda init >> ~/bcml_installer.log 2>&1 # Initialize Miniconda, in case the user has not already done so
         if [[ $? -eq 0 ]]; then
             :
         else
@@ -30,7 +33,7 @@ if zenity --question --title "Install BCML?" --text="This will install BCML to y
         fi
         echo "# conda install -c conda-forge gcc -y"
         echo "20"
-        ~/miniconda3/condabin/conda install -c conda-forge gcc -y >> ~/bcml_installer.log 2>&1 # Install GCC from conda-forge, which is required to compile some BCML dependencies
+        $CONDA_PREFIX/condabin/conda install -c conda-forge gcc -y >> ~/bcml_installer.log 2>&1 # Install GCC from conda-forge, which is required to compile some BCML dependencies
         if [[ $? -eq 0 ]]; then
             :
         else
@@ -40,7 +43,7 @@ if zenity --question --title "Install BCML?" --text="This will install BCML to y
         fi
         echo "# conda install pip -y"
         echo "30"
-        ~/miniconda3/condabin/conda install pip -y >> ~/bcml_installer.log 2>&1 # Install pip, the Python package manager, from conda repos
+        $CONDA_PREFIX/condabin/conda install pip -y >> ~/bcml_installer.log 2>&1 # Install pip, the Python package manager, from conda repos
         if [[ $? -eq 0 ]]; then
             :
         else
@@ -50,7 +53,7 @@ if zenity --question --title "Install BCML?" --text="This will install BCML to y
         fi
         echo "# python -m pip install bcml"
         echo "50"
-        ~/miniconda3/bin/python -m pip install bcml >> ~/bcml_installer.log 2>&1 # Finally install BCML via pip
+        $CONDA_PREFIX/bin/python -m pip install bcml >> ~/bcml_installer.log 2>&1 # Finally install BCML via pip
         if [[ $? -eq 0 ]]; then
             :
         else
