@@ -1,7 +1,7 @@
 [Desktop Entry]
 Comment[en_US]=Cross-platform mod loader for The Legend of Zelda: Breath of the Wild
 Comment=Cross-platform mod loader for The Legend of Zelda: Breath of the Wild
-Exec=~/miniconda3/bin/bcml
+Exec=/bin/bash -i -c '$CONDA_PREFIX/bin/bcml'
 GenericName[en_US]=BOTW Cross-platform Mod Loader
 GenericName=BOTW Cross-platform Mod Loader
 Icon=/home/deck/.icons/bcml.png
