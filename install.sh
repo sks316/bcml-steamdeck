@@ -66,7 +66,6 @@ if zenity --question --title "Install BCML?" --text="This will install BCML to y
         mkdir ~/.icons >> ~/bcml_installer.log 2>&1 # Make directory for BCML icon, with default settings this is hidden in the file browser
         wget https://github.com/sks316/bcml-steamdeck/raw/main/bcml.png -O ~/.icons/bcml.png >> ~/bcml_installer.log 2>&1 # Download icon file from my GitHub repo
         wget https://github.com/sks316/bcml-steamdeck/raw/main/BCML.desktop -O ~/Desktop/BCML.desktop >> ~/bcml_installer.log 2>&1 # Download .desktop launcher file from my GitHub repo
-        sed -i "s,~/miniconda3,${CONDA_PREFIX}," ~/Desktop/BCML.desktop >> ~/bcml_installer.log 2>&1 # Edit .desktop launcher file to point to BCML in conda install path
         chmod +x ~/Desktop/BCML.desktop >> ~/bcml_installer.log 2>&1 # Make BCML.desktop executable
         cp ~/Desktop/BCML.desktop ~/.local/share/applications/BCML.desktop >> ~/bcml_installer.log 2>&1 # Copy .desktop launcher file to application launcher
         echo "100"
